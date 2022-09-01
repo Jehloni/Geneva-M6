@@ -1,0 +1,453 @@
+/* font-family: 'Cormorant SC', serif;
+font-family: 'Josefin Sans', sans-serif; */
+/* tablet styles */
+/* the * targets all element */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* this holds the entire webpage so it can set the base color background img and fonts  */
+body {
+    background-repeat: no-repeat;
+    font-family: 'Cormorant SC', serif;
+    background-color: white;
+    background-size: initial;
+    background-position: center;
+}
+/* this is the Jehneva in the header   */
+h1 {
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #b66b36;
+}
+/* this give an animation of the when you go over it with a mouse */
+h1:hover{
+    color: black;
+}
+/* this is the for header that holds the name of the website. */
+header {
+    border-width: 1px;
+    border-style: solid; 
+    border-color: #3c2418; /* #3c2418 */
+    background-color: #f6f7f9;
+}
+/* this for the nav bar but it also holds the list items */
+nav {
+    border-bottom: 13px;
+    border-style: solid;
+    border-color: #3c2418; /* #3c2418 */
+    padding: 30px 0 30px 50px;
+    background-image: url(../pics/candles/bundle/homepageCandles.jpg);
+}
+
+/* this holds the names of the scents and is a container for the navigation */
+nav #categories {
+    width: 500px;
+    float: left;
+}
+/* this connects the data within the list of items and the link that they are apart of */
+nav li a {
+    margin: 0 0 0 0px;
+    transition: margin-left 0.5s;
+    background: linear-gradient(#3c1818,#5c3416,#6f3d17);
+    color: white;
+    padding: 20px;
+}
+
+/* ripple effect */
+.btn span {
+    position: absolute;
+    border-radius: 50%;
+    /* To make it round */
+    background: linear-gradient(#3c1818,#5c3416,#6f3d17);;
+
+    width: 20px;
+    height: 10px;
+    margin-top: 130px;
+    /* for positioning */
+    margin-left: 160px;
+
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+/* Add animation */
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+
+/* this gives animation color to the nav listing */
+nav li a:hover {
+    color: #b66b36;
+    margin: 0 0 0 30px;
+}
+/* this holds the listing of items of the nav bar  */
+nav li {
+    margin: 5px 0 50px 70px;
+    font-size: 30px;
+}
+/* controls all ul and moves them to the left */
+ul {
+    text-align: left;
+}
+/* controls the container in the maincontent, including the ul and li  */
+#mainContent ul li {
+    font-size: 35px;
+    margin: 0 0 50px 50px;
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0 3px 0 3px;
+}
+/* this controls the outside of the ul in the in maincontent*/
+#mainContent ul {
+    margin: 100px 0 0 0;
+}
+/* this controls the outside of the cartandsignin ul tag. */
+#cartandsignin ul {
+    /* text-align: right; */
+    width: 300px;
+    margin: 120px 0 0 2100px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+}
+/* this controls the unlisted list and the listed items and changed the font size */
+#cartandsignin ul li {
+    font-size: 20px;
+    list-style-type: none;
+    /* border: 1px solid green; */
+    /* display: inline; */
+}
+/* this controls the border attributes of the footer and the color */
+footer {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* .productPictureAndName h3 {
+    text-align: center;
+} */
+
+/* this controls the listing of the ul and li in the navigation */
+nav ul li {
+    list-style-type: none;
+    
+}
+
+/* this is the holds everything in the containing including header, h1 nav, ul, li, a , div, a class, href, input, etc*/
+#container {
+    width: 2500px;
+    margin: 0 auto 0 auto; /* Top, right, bottom, left */
+}
+/* #minicontainer {
+    width: 20px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border: 5px;
+    background-image: url(../pics/candles/singles/svitlana-6FFfvnvsJaQ-unsplash.jpg); */
+
+/* this hold the background for the item selection and controls where the navagation of the photo goes onthe webpage */
+#mainContent {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-image: url(../pics/candles/bundle/homepageCandles.jpg);
+    /* background-size: contain; */
+    background-position: 1200px;
+    background-repeat: no-repeat;
+    background-color: #bb8255;
+    height: 1000px; 
+}
+/* this is the ul surrounding li and a */
+#mainContent #mainContentListOfCategories {
+    /* border: 1px solid white; */
+    margin: 350px 0 0 0;
+    width: 300px;
+    float: left;
+}
+/* this controld the font color and removes the bullet points */
+#mainContentListOfCategories li a {
+    color: white;
+    text-decoration: none;
+}
+/* this adds an animation color when you hover the mouse of the listing items */
+#mainContentListOfCategories li a:hover{
+    text-decoration: underline;
+}
+/* thid is the photo of the item */
+#productPicture {
+    margin: 100px 0 0 90px;
+    width: 500px;
+    box-shadow: 3px 10px 8px #23170d;
+    float: left;
+}
+/* this controls the "box" of the information in the items */
+#productDetails {
+    color: black;
+    border: 1px solid black;
+    width: 800px;
+    margin: 100px 0 0 1300px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 20px;
+}
+/* this controls the paragraph in the productdetails section */
+#productDetails p {
+    margin: 0 0 30px 0;
+}
+
+/* #productDetails ul {
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+    /* text-align: right; */
+    /* list-style-type:none; */
+
+/* #productdetails ul h2 {
+    t
+} */
+
+/* #rowOfProducts {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 0 auto 0 auto;
+    width: 700px;
+} */
+/* this is a class topnav for placement of the search bar */
+/* .topnav{
+    float: center;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 260px 0 0 0;
+    
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 55px 600px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgba(253, 206, 165, 0);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+} */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* this is the foot on the bottom of the page and it controls the color and placement of the text and the footer itself. */
+footer {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #23170d;
+    color: white;
+    font-size: 25px;
+}
+
+/* tablet styles */
+@media only screen and (max-width:768px) {
+    
+}
+/* mobile styles */
+@media only screen and (max-width:450px) {
+    #mainContent{
+        font-size: 100px;
+        background-color: #b66b36;
+    }
+/* this changes the size of the container to minimize it for mobile use */
+    #container {
+        width: 840px;
+        margin: 0 auto 0 auto; /* Top, right, bottom, left */
+    }
+/* this changes the placement of the product details tag */
+    #productDetails {
+        color: black;
+        float: none;
+        margin: 0 0 0 0;
+        font-size: 45px;
+    /* width: 400px; */
+    /* margin: 43px 0 500px; */
+    }
+/* changes the size of the fontsize to make smaller/bigger */
+    nav li {
+        /* margin: 5px 0 50px 70px; */
+        font-size: 55px;
+    }
+/* this removed the float on mobile device for the listed scents to purchase */
+    nav #categories {
+        /* width: 500px; */
+        float: none;
+    }
+/* this removed the float on mobile device for the listed scents to purchase */
+    #mainContent #mainContentListOfCategories {
+        float: none;
+        width: 800px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+
+    }
+
+/* changes the size of the fontsize to make smaller/bigger */
+    #mainContentListOfCategories li a {
+        /* color: white; */
+        /* text-decoration: none; */
+        font-size: 50px;
+    }
+
+/* used inline to remove the effects of floats around and this making it not able to move */
+    #mainContentListOfCategories li {
+        display: inline;
+    }
+/* removes float to fit the size of mobile */
+    #productPicture {
+        float: none;
+        margin: 0 0 0 90px;
+    }
+/* this changes the width of the ul of cartsignin to fit the mobile device */
+    #cartandsignin ul {
+        /* text-align: right; */
+        width: 500px;
+        margin: 0 0 0 0;
+        /* border-width: 1px;
+        border-style: solid;
+        border-color: black; */
+    }
+/* this changes the font size listed in the li in the ul cartsignin */
+    #cartandsignin ul li {
+        font-size: 55px;
+        /* list-style-type: none;
+        border: 1px solid green; */
+        /* display: inline; */
+    }
+    
+/* this moved the items to a more acessdible place on the page for mobile */
+    #mainContentListOfCategories{
+        margin: 200px 0 0 300px;
+    }
+    
+} 
+/* body {
+    background-color: pink;
+    background-image: radial-gradient(circle, #ffffff, #b1b1bc, #696969);
+}
+div{
+    border:1px solid black;
+    color:white  
+}
+#one{
+    background:red;
+    height: 150px;
+    text-align:right;
+    font-size: 70px;
+    width: 50%;
+}
+#two{
+    background:yellow;
+    width:200px;
+    color:black;
+    float:center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 1900px
+}
+#three{
+    background:green;
+    width:500px;
+    height:900px;
+    float:right;
+}
+#four{
+    background:pink
+}
+#container {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 1000px;
+    margin: 0 auto 0 auto; /* top right bottom left     
+}
+
+nav {
+    border-width: 0px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    width: 280px;
+    padding: 10px 0px 30px 10px; /* top right bottom left  
+    font-size: 60px; 
+    font-family: 'Marck Script', cursive;   
+}
+p{
+    text-align: center;
+    padding: 20px 0px 30px 400px;
+} */
+
+/* h1{
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Cormorant SC', serif;
+    color: #000045;
+    text-shadow: 2px 2px #0f396345;
+}
+a{
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+#productDescription {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    width: 698px;
+    padding: 0px 30px 0px 60px;
+
+}
+
+footer {
+    clear: both;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 600px 20px 20px 20px;
+    text-align: center;
+}
+
+#candles {
+    text-align: center;
+    font-size: 30px;
+    color: #431125;
+    text-shadow: 2px 2px #7e4646;
+}
+li{
+    list-style: none;
+} 
+
+/* ul li  */
+/* TODO: Understand this better */
+/* #mainContent {
+    background-color: #ff43a4;
+    content: "";
+    clear: both;
+    display: table;
+}
